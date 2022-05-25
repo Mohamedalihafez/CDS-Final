@@ -2,6 +2,10 @@
 
 //=================frontend================
 
+use App\Http\Controllers\QuessionareController;
+use Illuminate\Support\Facades\Route;
+
+
 Route::any('users-activates/{token?}', 'Auth\RegisterController@userActivates')->name('users-activates');
 Route::any('register', 'Auth\RegisterController@register')->name('register');
 
@@ -280,3 +284,14 @@ Route::group(['namespace' => 'backend', 'prefix' => '@admin', 'middleware' => 'a
 
 
 
+//-------------------------------------------------------------//
+
+Route::get("/q",[QuessionareController::class,"showquessionare"]);
+Route::get("/quessionareresult",[QuessionareController::class,"quessionareresult"]);
+
+// Route::get('/test', function () {
+//     return view('appointment.appointment');
+// });
+
+Route::any('appointment', 'AppointmentController@showappointment')->name('appointment');
+Route::get('/insertintoappointmenttable', 'AppointmentController@insertintoappointmenttable');
