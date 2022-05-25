@@ -13,7 +13,7 @@
 
                         <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                            aria-expanded="false">
-                            <img src="{{url('public/backend/uploads/images/admin/'.\Illuminate\Support\Facades\Auth::guard('admin')->user()->image)}}"
+                            <img src="{{asset('backend/uploads/images/admin/'.\Illuminate\Support\Facades\Auth::guard('admin')->user()->image)}}"
                                  alt="">
                             {{\Illuminate\Support\Facades\Auth::guard('admin')->user()->name}}
                             <span class=" fa fa-angle-down"></span>
