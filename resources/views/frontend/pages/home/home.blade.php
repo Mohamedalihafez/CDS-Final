@@ -299,6 +299,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <h3></h3>
                     <div class="row">
                         <div class="aa-product-area">
                             <div class="aa-product-inner">
@@ -369,9 +370,7 @@
                                 <div class="col-md-4 col-sm-4">
                                     <article class="aa-latest-blog-single">
                                         <figure class="aa-blog-img">
-                                            <a href="{{route('news-details').'/'.$news->slug}}"><img
-                                                        src="{{asset('assets/backend/uploads/images/news/'.$news->image)}}"
-                                                        alt="img" height="300"></a>
+                                            <a href="{{route('news-details').'/'.$news->slug}}"><img src="{{asset('backend/uploads/images/news/'.$news->image)}}"alt="img" height="300"></a>
                                             <figcaption class="mu-blog-caption">
                                                 <h3><a href="{{route('news-details').'/'.$news->slug}}">
                                                         {{substr($news->title,0,25)}}

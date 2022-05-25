@@ -10,7 +10,7 @@
 
             <div class="profile clearfix">
                 <div class="profile_pic">
-                    <img src="{{asset('assets/backend/uploads/images/admin/'.Auth::guard('admin')->user()->image)}}" alt="..." class="img-circle profile_img">
+                    <img src="{{asset('backend/uploads/images/admin/'.Auth::guard('admin')->user()->image)}}" alt="..." class="img-circle profile_img">
                 </div>
 
             </div>

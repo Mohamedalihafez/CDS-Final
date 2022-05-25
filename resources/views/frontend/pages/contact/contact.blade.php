@@ -25,9 +25,9 @@
                                     <h4>Contact Details</h4>
                                     <div class="aa-contact-address-right">
                                         <ul class="list-group">
-                                            <li class="list-group-item" style="padding: 25px;margin-bottom:10px;"><i class="fa fa-home"></i> Kathmandu,kapan Satalla</li>
-                                            <li class="list-group-item" style="padding: 25px;margin-bottom:10px;"><i class="fa fa-phone"></i> 9808270974</li>
-                                            <li class="list-group-item" style="padding: 25px;margin-bottom:10px;"><i class="fa fa-envelope"></i> mail:online.medicalstore@gmail.com</li>
+                                            <li class="list-group-item" style="padding: 25px;margin-bottom:10px;"><i class="fa fa-home"></i> Mohamed ALi </li>
+                                            <li class="list-group-item" style="padding: 25px;margin-bottom:10px;"><i class="fa fa-phone"></i> 01026036513</li>
+                                            <li class="list-group-item" style="padding: 25px;margin-bottom:10px;"><i class="fa fa-envelope"></i>alimomo226@gmail.com</li>
 
                                         </ul>
                                     </div>
@@ -57,8 +57,8 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <input type="text" id="topic" name="topic"
-                                                               placeholder="Topic"
+                                                        <input type="phone" id="topic" name="topic"
+                                                               placeholder="Phone"
                                                                class="form-control">
 
                                                     </div>
@@ -91,9 +91,7 @@
 
                                 <div class="col-md-12">
                                     <hr>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.9142858255777!2d85.38106301453863!3d27.71993263154673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bbf00000001%3A0x2a1a97b9a3c1d3b6!2sNami+College!5e0!3m2!1sen!2snp!4v1554964811655!5m2!1sen!2snp"
-                                            width="100%" height="450" frameborder="0" style="border:0"
-                                            allowfullscreen></iframe>
+                                 <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=faculty%20of%20science%20alexandria%20university&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe><a href="https://fnftest.net" style="display:none">fnf test</a><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://googlemapsiframegenerator.com" style="display:none">Google Maps Iframe Generator - Free Html Embed Code</a><style>.gmap_canvas{overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
                                 </div>
                             </div>
                         </div>
