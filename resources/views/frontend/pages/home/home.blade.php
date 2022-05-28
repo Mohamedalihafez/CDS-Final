@@ -199,7 +199,7 @@
                     <img src="{{asset('assets/images/Questionnaire.png')}}"  class="img-icon" alt="#"/>
                 </figure>
                 <div class="nostrud">
-                   <h3>Questionnaire</h3>
+                   
                    <p class="mt-2">Answer some questions and get your percentage of having COVID-19</p>
                 </div>
              </div>
@@ -209,8 +209,8 @@
                 <figure>
                     <img src="{{asset('assets/images/ct-scan.png')}}"  class="img-icon" alt="#"/>
                 </figure>                <div class="nostrud">
-                   <h3>Ct-Scan</h3>
-                   <p class="mt-2">Upload your CT-scan and get the result of having COVID-19 or no</p>
+                   <h3> <a href=" {{route('ct')}}">Ct-scan </a> </h3>
+                    <p class="mt-2">Upload your CT-scan and get the result of having COVID-19 or no</p>
                 </div>
              </div>
           </div>

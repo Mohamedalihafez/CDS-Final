@@ -24,7 +24,9 @@ class ApplicationController extends FrontendController
         $this->data('productData', Product::all());
         return view($this->pagePath . 'home.home', $this->data);
     }
-
+    public function ct(){
+        return redirect('http://127.0.0.1:5000/');
+    }
     public function subscribePost(Request $request)
     {
 

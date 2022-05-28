@@ -1,14 +1,16 @@
 <?php
+use App\Http\Controllers\QuessionareController;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
+
 
 //=================frontend================
 
-use App\Http\Controllers\QuessionareController;
-use Illuminate\Support\Facades\Route;
-
-
 Route::any('users-activates/{token?}', 'Auth\RegisterController@userActivates')->name('users-activates');
 Route::any('register', 'Auth\RegisterController@register')->name('register');
-
+Route::get('ctscan', function () {
+ return \Redirect::to('http://127.0.0.1:5000/');
+});
 
 
 Route::group(['namespace' => 'frontend'], function () {
@@ -19,6 +21,8 @@ Route::group(['namespace' => 'frontend'], function () {
 
     //----------------------homepage-------------------------------
     Route::any('/', 'ApplicationController@index')->name('index');
+    Route::any('ct', 'ApplicationController@ct')->name('ct');
+
     Route::any('about-us', 'AboutUsController@aboutUs')->name('about-us');
     Route::any('contact', 'ContactController@contact')->name('contact');
     Route::any('contact-post', 'ContactController@contactPost')->name('contact-post');
@@ -282,9 +286,8 @@ Route::group(['namespace' => 'backend', 'prefix' => '@admin', 'middleware' => 'a
 Route::get("/q",[QuessionareController::class,"showquessionare"]);
 Route::get("/quessionareresult",[QuessionareController::class,"quessionareresult"]);
 
-// Route::get('/test', function () {
-//     return view('appointment.appointment');
-// });
+
+
 
 Route::any('appointment', 'AppointmentController@showappointment')->name('appointment');
 Route::get('/insertintoappointmenttable', 'AppointmentController@insertintoappointmenttable');
@@ -293,14 +296,3 @@ Route::get('/insertintoappointmenttable', 'AppointmentController@insertintoappoi
 
 
 
-//-------------------------------------------------------------//
-
-Route::get("/q",[QuessionareController::class,"showquessionare"]);
-Route::get("/quessionareresult",[QuessionareController::class,"quessionareresult"]);
-
-// Route::get('/test', function () {
-//     return view('appointment.appointment');
-// });
-
-Route::any('appointment', 'AppointmentController@showappointment')->name('appointment');
-Route::get('/insertintoappointmenttable', 'AppointmentController@insertintoappointmenttable');
