@@ -199,7 +199,8 @@
                     <img src="{{asset('assets/images/Questionnaire.png')}}"  class="img-icon" alt="#"/>
                 </figure>
                 <div class="nostrud">
-                   
+                    <h3> <a href="">Questionnaire</a> </h3>
+
                    <p class="mt-2">Answer some questions and get your percentage of having COVID-19</p>
                 </div>
              </div>
@@ -295,7 +296,7 @@
     </div>
  </div>
     <!-- Products section -->
-    <section id="aa-product">
+    {{-- <section id="aa-product">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -350,14 +351,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- / Products section -->
     <!-- banner section -->
 
     <!-- / Testimonial -->
 
     <!-- Latest Blog -->
-    <section id="aa-latest-blog">
+     {{-- <section id="aa-latest-blog">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -396,6 +397,88 @@
                 </div>
             </div>
         </div>
+    </section> --}}
+
+    <section class="cases" id="mu-course-content">
+        <div class="titlepage  text_align_center ">
+            <h2 class="darkblue1">Our Pharmacy</h2>
+            <div class="container">
+                <div class="row">
+
+                    <ul class="aa-product-catg">
+                        <!-- start single product item -->
+                        @foreach($productData as $product)
+
+                            <li>
+
+                                    <figure>
+                                        <a class="aa-product-img"
+                                        href="{{route('product-details').'/'.$product->id}}"><img
+                                                    src="{{asset('backend/uploads/images/product/'.$product->image)}}"
+                                                    width="250" height="200"
+                                                    alt="polo shirt img"></a>
+                                        <a class="aa-add-card-btn"
+                                        href="{{route('product-details').'/'.$product->id}}"><span
+                                                    class="fa fa-shopping-cart"></span>Add To
+                                            Cart</a>
+                                        <figcaption>
+                                            <h4 class="aa-product-title"><a
+                                                        href="#">{{$product->name}}</a></h4>
+                                                        
+                                            <span class="aa-product-price">Rs: {{$product->price}}</span>
+                                        </figcaption>
+                                    </figure>
+
+
+                            </li>
+
+                        @endforeach
+
+
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="about">
+                        <div class="container">
+                        <div class="row d_flex">
+                            <div class="col-md-5">
+                                <div class="about_img text_align_center">
+                                <figure>
+                                    <img src="{{asset('assets/images/about.png')}}" alt="" >
+                                </figure>
+                                </div>
+                            </div>
+                                <div class="col-md-7">
+                                <div class="titlepage text_align_left">
+                                    <h3 style="font-size:30px ;color: #06489E">About Us</h3>
+                                    <h2 style="font-size:35px ; color:#262A4E">System Detect Patient
+                                    CT Scan & Show Result.</h2>
+                                    <p>  Medicine Marble statue of Asclephius on a pedestal, symbol of medicine in Western medicine
+                                        Statue of Asclepius, the Greek god of medicine, holding the symbolic Rod of Asclepius with its
+                                        coiled serpent
+                                        Specialist Medical specialty
+                                        Glossary Glossary of medicine
+                                        Medicine is the science and practice of establishing the diagnosis, prognosis, treatment, and
+                                        prevention of disease.
+                                        Medicine encompasses a variety of health care practices evolved to maintain and restore health
+                                        by the prevention and
+                                        treatment of illness. Contemporary medicine applies biomedical sciences, biomedical research,
+                                        genetics, and medical technology
+                                        to diagnose, treat, and prevent injury and disease, typically through pharmaceuticals or
+                                        surgery, but also through therapies as diverse
+                                        as psychotherapy, external splints and traction, medical devices, biologics, and ionizing
+                                        radiation, amongst others.
+                                    </p>
+                                    <a class="read_more" href="{{route('about-us')}}">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
     </section>
     <!-- / Latest Blog -->
 
@@ -407,7 +490,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="aa-subscribe-area">
-                        <h3>Subscribe to our Store </h3>
+                        <h3>Subscribe to our Pharmacy </h3>
                         <form action="{{route('subscribe-post')}}" id="email_form_action" method="post"
                               class="aa-subscribe-form">
                             @csrf

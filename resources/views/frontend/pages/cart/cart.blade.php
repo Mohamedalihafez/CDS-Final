@@ -27,7 +27,7 @@
                                                 <td>Rs : {{$card->price}}</td>
                                                 <td>{{$card->quantity}}</td>
                                                 <td>
-                                                    <img src="{{url('public/backend/uploads/images/product/'.$card->image)}}"
+                                                    <img src="{{asset('backend/uploads/images/product/'.$card->image)}}"
                                                          alt="">
                                                 </td>
 
@@ -59,7 +59,7 @@
                                             data-key="{{ env('STRIPE_PUB_KEY') }}"
                                             data-amount="{{$totalPrice}}"
                                             data-name="Payment"
-                                            data-description="Online medical store"
+                                            data-description="Corona Detection System"
                                             data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                                             data-locale="auto"
                                             data-currency="usd">

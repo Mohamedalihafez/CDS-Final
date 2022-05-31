@@ -15,7 +15,7 @@ class AdminSeder extends Seeder
         \App\Admin::create([
         'email'=>'mohamed@gmail.com',
         'password'=>bcrypt('mohamed1234'),
-        'image' => 'user.jpg'
+        'image' => '../a'
 
 
         ]);

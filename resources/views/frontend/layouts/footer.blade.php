@@ -1,9 +1,11 @@
 @section('footer')
     <!-- footer -->
     <footer>
-        <div class="footer">
+        <div class="footer ">
            <div class="container">
+
               <div class="row offset-lg-0">
+                  
                        <div class="col-md-5 ">
                           <div class="hedingh3 text_align_center">
                              <h3>CDS.</h3>

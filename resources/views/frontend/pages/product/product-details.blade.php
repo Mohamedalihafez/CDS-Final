@@ -14,7 +14,7 @@
                                         <div id="demo-1" class="simpleLens-gallery-container">
                                             <div class="simpleLens-container">
                                                 <div>
-                                                    <img src="{{url('assets/backend/uploads/images/product/'.$productDetails->image)}}"
+                                                    <img src="{{asset('backend/uploads/images/product/'.$productDetails->image)}}"
                                                          class="simpleLens-lens-image"></div>
                                             </div>
                                         </div>
@@ -62,10 +62,11 @@
 
 
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="description">
+                                <div class="" id="description">
                                     <h4> {!! $productDetails->description !!}</h4>
                                 </div>
                             </div>
+                            <br>
                         </div>
 
 
@@ -74,6 +75,7 @@
             </div>
         </div>
     </section>
+    <br>
 
 
 

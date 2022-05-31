@@ -2,7 +2,7 @@
 @section('content')
     <section id="mu-course-content">
         <div class="container">
-            <div class="row">
+            <div class="col-12">
                 <div class="mu-course-content-area">
                     <div class="row">
                         <div class="col-md-12">

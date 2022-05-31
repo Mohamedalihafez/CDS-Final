@@ -68,28 +68,6 @@
 
 
 
-        <div class="aa-header-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="aa-header-bottom-area">
-
-
-
-                        
-                            <div class="aa-search-box">
-                                <form action="{{route('search-medicine')}}" method="get">
-                                    <input type="text" name="criteria" id="search-medicine"
-                                           placeholder="Search for medicine ">
-                                </form>
-                                <div id="getResult"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </header>
 

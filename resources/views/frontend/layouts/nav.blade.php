@@ -13,9 +13,18 @@
                         <a class="nav-link active" href="{{route('index')}}"">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="{{route('news')}}" >About</a>
+                        <a class="nav-link"  href="{{route('about-us')}}" >About</a>
                     </li>
+                
+                    {{-- <li class="">
+                        <a class="nav-link" href="#">Category <span class="caret"></span>
+                        <ul class="dropdown-menu">
+                            @foreach($catData as $cat)
+                                <li><a href="{{route('index-category').'/'.$cat->cat_name}}">{{$cat->cat_name}}</a></li>
+                            @endforeach
 
+                        </ul>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('appointment')}}">Appointment</a>
                     </li>

@@ -66,7 +66,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <input type="text" id="brand" name="brand"
-                                                               placeholder="brand"
+                                                               placeholder="doctor"
                                                                class="form-control">
 
                                                     </div>
